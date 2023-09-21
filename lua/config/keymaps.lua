@@ -4,6 +4,9 @@
 vim.g.copilot_no_tab_map = true
 vim.api.nvim_set_keymap("i", "<C-J>", 'copilot#Accept("<CR>")', { silent = true, expr = true })
 
+-- Keymaps
+vim.api.nvim_set_keymap("i", "jj", "<ESC>", { noremap = true, silent = true })
+
 local wk = require("which-key")
 wk.register({
   g = {
