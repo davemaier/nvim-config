@@ -47,6 +47,8 @@ require("lazy").setup({
   },
 })
 
+require("telescope").load_extension("harpoon")
+
 require("litee.lib").setup()
 require("litee.gh").setup({
   -- deprecated, around for compatability for now.
