@@ -7,6 +7,9 @@ vim.api.nvim_set_keymap("i", "<C-J>", 'copilot#Accept("<CR>")', { silent = true,
 -- Keymaps
 vim.api.nvim_set_keymap("i", "jj", "<ESC>", { noremap = true, silent = true })
 
+vim.api.nvim_set_keymap("v", "<C-K>", ":m '>+1<CR>gv=gv", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("v", "<C-J>", ":m '<-2<CR>gv=gv", { noremap = true, silent = true })
+
 local wk = require("which-key")
 wk.register({
   g = {
